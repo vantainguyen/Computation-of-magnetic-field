@@ -18,9 +18,8 @@ The parameters of the cylinder and the computed point in free space is as follow
     z (m) - the z coordinate of the computed point
     alpha (rad) - the azimuthal angle of the computed point
     Axial, Azimuthal and Radial denote the axial, azimuthal and radial components
-    of the magnetic field
+    of the magnetic field """  
     
-    """  
     To use this Python module, simply download it and place it in the folder where is visible for the Python.
     # To call the module
     from Diametrical_cylinder import B_flux
