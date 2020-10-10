@@ -1,34 +1,9 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
-
 
 from numpy import cos, sin, pi, sqrt
 from scipy.integrate import quad
-
-
-# In[36]:
-
-
-class B_flux_normalized():
-    mu0 = 4*pi*10**-7
-    def __init__(self, pxi, ki, lam):
-        self.pxi = pxi
-        self.ki = ki
-        self.lam = lam
-    def PK_squared(self,beta):
-        return 1+self.pxi**2 - 2*self.pxi*cos(beta)
-    def main_func_axial(self,beta):
-        func_1 = 1/sqrt((self.ki/2-self.lam)**2+self.PK_squared(beta))
-        func_2 = 1/sqrt((self.ki/2+self.lam)**2+self.PK_squared(beta))
-        return (func_1-func_2)*cos(beta)
-    def Axial(self):
-        return quad(self.main_func_axial,-pi,pi)[0]
-        
-
-
-# In[92]:
 
 
 # Computation of the magnetic field distribution of a diametrical 
