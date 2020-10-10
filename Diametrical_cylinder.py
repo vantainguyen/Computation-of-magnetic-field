@@ -54,23 +54,4 @@ class B_flux():
         return self.J*self.R*quad(self.main_func_radial,-pi,pi)[0]*sin(self.alpha)/4/pi
 
         
-        
-
-
-# In[ ]:
-
-
-
-
-
-# In[89]:
-
-
-10**4*B_flux(1, 2.5/1000,5/1000,3/1000,2/1000,pi/3).Radial()
-
-
-# In[ ]:
-
-
-
 
