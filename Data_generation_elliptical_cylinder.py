@@ -48,7 +48,7 @@ for i in tqdm(range(int(1000))):
     r_l.append(r)
     phi = 20*pi/180
     phi_l.append(phi)
-    z = z0 + i*225/1000 # random.uniform(80, 150)
+    z = z0 + i*225/1000 # from -75 to 150
     z_l.append(z)
     random.shuffle(magnetization)
     J_X, J_Y, J_Z = magnetization
