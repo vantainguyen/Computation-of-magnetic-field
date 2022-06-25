@@ -39,8 +39,8 @@ phi0 = 0
 start_time = time.time()
 for i in tqdm(range(int(1000))):
     R = random.uniform(3, 50)
-    a = 25
-    b = 25
+    a = 15
+    b = 30
     #R_l.append(R)
     h = 30 # random.uniform(55, 100)
     h_l.append(h)
